@@ -1,0 +1,82 @@
+/* font-satoshi */
+@import url('satoshi.css');
+/* font-playfair display(400) */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap');
+
+/* font-pretendard */
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+:root {
+    /* font family */
+    --font-kr: 'Pretendard', 'Noto Sans KR', sans-serif;
+    --font-en: 'Satoshi-Variable', Arial, sans-serif;
+    --font-display: 'Playfair Display', Georgia, serif;
+    /* font base */
+    --font-base: 'Satoshi-Variable', 'Pretendard', sans-serif;
+    /* font weight */
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-black: 900;
+    /* font size */
+    --font-size-20: 20px;
+    --font-size-24: 24px;
+    --font-size-28: 28px;
+    --font-size-36: 36px;
+    --font-size-40: 40px;
+    --font-size-48: 48px;
+    --font-size-64: 64px;
+    --font-size-140: 140px;
+    /* spacing */
+    --space-4: 4px;
+    --space-8: 8px;
+    --space-12: 12px;
+    --space-16: 16px;
+    --space-20: 20px;
+    --space-24: 24px;
+    --space-28: 28px;
+    --space-32: 32px;
+    --space-40: 40px;
+    --space-48: 48px;
+    --space-64: 64px;
+    --space-96: 96px;
+    --space-120: 120px;
+    --space-160: 160px;
+    --space-180: 180px;
+    --space-220: 220px;
+    --space-240: 240px;
+    /* color */
+    --color-background: #F8F8FA;
+    --color-text: #141414;
+    --color-primary: #F5A1C8;
+    --color-secondary: #A6C8FF;
+    --color-ternary: #DFF477;
+    --color-inactive: #D6D6D6;
+}
