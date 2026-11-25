@@ -188,10 +188,6 @@ nav > ul > li > a.is-active::after {
     padding: var(--space-64) var(--space-120);
 }
 
-#intro h2 {
-    display: none;
-}
-
 .intro__container {
     display: flex;
     gap: var(--space-120);
@@ -234,4 +230,13 @@ nav > ul > li > a.is-active::after {
 .intro__contents > p {
     font-size: var(--font-size-20);
     font-weight: var(--font-weight-regular);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
 }
