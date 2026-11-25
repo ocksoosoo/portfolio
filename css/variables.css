@@ -73,6 +73,7 @@
     /* color */
     --color-background: #F8F8FA;
     --color-text: #141414;
+    --color-text-reverse: #FCFCFC;
     --color-primary: #F5A1C8;
     --color-secondary: #A6C8FF;
     --color-ternary: #DFF477;
@@ -83,4 +84,7 @@
     /* layout */
     --container-max-width: 1312px;
     --container-margin: 64px;
+    /* height */
+    --header-height: 100px;
+    --section-min-height: calc(100dvh - var(--header-height));
 }
