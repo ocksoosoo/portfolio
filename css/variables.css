@@ -37,8 +37,6 @@
     --font-kr: 'Pretendard', 'Noto Sans KR', sans-serif;
     --font-en: 'Satoshi-Variable', Arial, sans-serif;
     --font-display: 'Playfair Display', Georgia, serif;
-    /* font base */
-    --font-base: 'Satoshi-Variable', 'Pretendard', sans-serif;
     /* font weight */
     --font-weight-regular: 400;
     --font-weight-medium: 500;
@@ -79,4 +77,10 @@
     --color-secondary: #A6C8FF;
     --color-ternary: #DFF477;
     --color-inactive: #D6D6D6;
+    /* letter spacing */
+    --letter-spacing-kr: -0.04em;
+    --letter-spacing-en: -0.02em; 
+    /* layout */
+    --container-max-width: 1312px;
+    --container-margin: 64px;
 }

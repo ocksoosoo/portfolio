@@ -1,1 +1,88 @@
 @import url('variables.css');
+
+/* base style */
+body {
+    max-width: 1312px;
+    margin: 0 64px;
+
+    font-family: var(--font-kr);
+    color: var(--color-text);
+    background-color: var(--color-background);
+    letter-spacing: var(--letter-spacing-kr);
+}
+
+.container {
+    width: calc((100% - var(--container-margin) * 2));
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+}
+
+/* header */
+header {
+    width: 100%;
+    height: 160px;
+    margin-top: var(--space-20);
+}
+
+nav > ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* connected line */
+nav > ul::before {
+    content: "";
+    position: absolute;
+    /* top: 69px; */
+    /* left: 75px; */
+    /* width: 260px; */
+    height: 1px;
+    background-color: var(--color-inactive);
+    pointer-events: none;
+}
+
+/* connected line(connecting) */
+nav > ul.is-connecting::before {
+    background-color: var(--color-text);
+}
+
+nav > ul > li {
+    width: 140px;
+    line-height: 40px;
+    align-items: center;
+    gap: var(--space-20);
+    text-align: center;
+    font-size: var(--font-size-20);
+    font-weight: var(--font-weight-medium);
+}
+
+nav > ul > li > a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-20);
+}
+
+nav > ul > li > a::after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-color: var(--color-inactive);
+    border-radius: 50%;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+/* nav node hover */
+nav > ul > li > a:not(.is-acitve):hover::after {
+    transform: scale(1.15);
+}
+
+/* nav node active */
+nav > ul > li > a.is-active::after {
+    background-color: var(--color-text);
+    transform: scale(1.3);
+}
+
+/* hero */
