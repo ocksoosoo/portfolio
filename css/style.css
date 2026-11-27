@@ -398,7 +398,7 @@ nav > ul > li > a.is-active::after {
   display: flex;
   flex: 0 0 var(--works-active-node-diameter);
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   aspect-ratio: 1;
 }
 
