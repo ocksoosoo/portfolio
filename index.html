@@ -11,11 +11,11 @@
     <header>
         <nav class="container">
             <ul>
-                <li><a href="#hero" class="is-acitve">HOME</a></li>
-                <li><a href="#profile" class="is-acitve">PROFILE</a></li>
-                <li><a href="#works" class="is-acitve">WORKS</a></li>
-                <li><a href="#lab" class="is-acitve">LAB</a></li>
-                <li><a href="#contact" class="is-acitve">CONTACT</a></li>
+                <li><a href="#hero" class="is-active">HOME</a></li>
+                <li><a href="#profile" class="is-active">PROFILE</a></li>
+                <li><a href="#works" class="is-active">WORKS</a></li>
+                <li><a href="#lab" class="is-active">LAB</a></li>
+                <li><a href="#contact" class="is-active">CONTACT</a></li>
             </ul>
         </nav>
     </header>
@@ -164,7 +164,18 @@
         <section id="works">
             <div class="works__container container">
                 <h2 class="heading">Selected Works</h2>
+
+                <div class="works__list">
+                    <span class="works__indicator" aria-hidden="true"></span>
+
                     <article class="works__item">
+                        <span class="works__track" aria-hidden="true"></span>
+                        <div class="works__marker">
+                            <!-- .works__marker::before = 순번 -->
+                            <span class="works__node" aria-hidden="true"></span>
+                            <!-- .works__marker::after = 가로 연결선 -->
+                        </div>
+
                         <div class="works__content">
                             <div class="works__heading">
                                 <h3>광주여성영화제 웹 UI/UX 재설계 및 프론트엔드 개발</h3>
@@ -197,6 +208,11 @@
                     </article>
 
                     <article class="works__item">
+                        <span class="works__track" aria-hidden="true"></span>
+                        <div class="works__marker">
+                            <span class="works__node" aria-hidden="true"></span>
+                        </div>
+
                         <div class="works__content">
                             <div class="works__heading">
                                 <h3>SORTILAB ─ 인터랙티브 분리배출 실험실</h3>
@@ -230,6 +246,10 @@
                     </article>
 
                     <article class="works__item">
+                        <div class="works__marker">
+                            <span class="works__node" aria-hidden="true"></span>
+                        </div>
+
                         <div class="works__content">
                             <div class="works__heading">
                                 <h3>SCENERY ─ 데스크테리어 큐레이션 편집숍</h3>
@@ -260,6 +280,7 @@
                             </div>
                         </div>
                     </article>
+                </div> <!-- .works__list -->
             </div> <!-- .container -->
         </section>
     
