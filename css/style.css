@@ -721,6 +721,89 @@ nav > ul > li > a.is-active::after {
     opacity: 1;
 }
 
+/* contact(footer) */
+.contact__email > button {
+  /* 기본 버튼 스타일 제거 */
+    appearance: none;
+    border: none;
+    background: none;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+
+    position: relative;
+    border-bottom: 4px solid var(--color-text);
+    font-family: var(--font-en);
+    font-size: var(--font-size-display);
+    font-weight: var(--font-weight-semibold);
+    letter-spacing: var(--letter-spacing-en);
+    color: var(--color-text);
+    cursor: pointer;
+  }
+
+.contact__tooltip {
+    position: absolute;
+    /* 임시 배치 */
+    right: 5%;
+    bottom: 0;
+    transform: translateY(50%);
+
+    display: flex;
+    align-items: center;
+    gap: var(--space-3xs);
+    padding: var(--space-3xs) var(--space-2xs);
+
+    background-color: var(--color-primary);
+    border-radius: 999px;
+    font-family: var(--font-en);
+    font-size: 16px;
+    font-weight: var(--font-weight-medium);
+    white-space: nowrap;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+}
+
+.contact__email > button:hover .contact__tooltip,
+.contact__email > button:focus-visible .contact__tooltip {
+    opacity: 1;
+}
+
+.contact__socials {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2xs);
+    margin-top: var(--space-l);
+}
+
+.contact__socials a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 54px;
+    aspect-ratio: 1;
+    background-color: var(--color-text);
+    color: var(--color-text-reverse);
+    transition: background-color 0.2s color 0.3s;
+}
+
+.contact__socials a:hover {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+}
+
+#contact > .container > p {
+    margin-top: var(--space-4xl);
+    font-family: var(--font-en);
+    font-size: 16vw;
+    font-weight: var(--font-weight-black);
+    letter-spacing: -0.05em;
+    line-height: 1;
+    white-space: nowrap;
+    user-select: none;
+}
+
 /* screen reader only */
 .sr-only {
   position: absolute;
